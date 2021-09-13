@@ -22,8 +22,16 @@
         }
 
         body {
-            font-family: sofia-pro, sans-serif;
-            font-weight: 700;
+            font-family: lato, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: roboto-mono, monospace;
+            font-weight: 500;
             font-style: normal;
         }
 
@@ -57,110 +65,37 @@
         }
 
 
-
-        .homesection {}
-
-        /*MASTHEAD*/
-        .masthead {
-            /*            background-color: #f8f9fa;*/
-            /*            padding-top: 9.5rem;*/
-            /*            padding-bottom: 5rem;*/
+        a.notBlue {
+            color: inherit;
+            text-decoration: none;
         }
 
-        .masthead .masthead-device-mockup {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+        a.notBlue:hover {
+            color: #749CF8;
+            text-decoration: underline;
         }
 
-        .masthead .masthead-device-mockup .circle {
-            position: absolute;
-            fill: url(#circleGradient);
-            width: 70%;
-            display: none;
+
+        .frameworkrighttbox {
+            margin-bottom: 4em;
         }
 
-        .masthead .masthead-device-mockup .circle .gradient-start-color {
-            stop-color: #2937f0;
+        .mainframe {
+            display: grid;
+            grid-gap: 64px;
+            grid-template-columns: auto auto;
         }
 
-        .masthead .masthead-device-mockup .circle .gradient-end-color {
-            stop-color: #9f1ae2;
-        }
-
-        .masthead .masthead-device-mockup .shape-1 {
-            position: absolute;
-            height: 1rem;
-            width: 1rem;
-            transform: rotate(-10deg);
-            fill: #2937f0;
-            bottom: 1%;
-            left: 1%;
-        }
-
-        .masthead .masthead-device-mockup .shape-2 {
-            position: absolute;
-            height: 0.75rem;
-            width: 0.75rem;
-            fill: #2937f0;
-            top: 1%;
-            right: 1%;
-        }
-
-        .masthead .masthead-device-mockup .device-wrapper {
-            max-width: 10rem;
-        }
-
-        @media (min-width: 576px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 70%;
-                display: block;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 12.5rem;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 60%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 90%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 75%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 70%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 17rem;
-            }
+        .frameworklefttbox {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 32px;
+            display: grid;
+            padding-right: 32px;
+            padding-bottom: 16px;
+            border-right: 2px solid;
+            text-align: right;
+            justify-items: right;
         }
 
     </style>
@@ -241,7 +176,267 @@
     <!--    Section1-->
     <!--    <section class="bg-white homesection mb-5">-->
     <div class="bg-white homesection mb-5 container px-5">
+        <div class="anchor" id="">
+        </div>
 
+        <div class="mainframe">
+            <div>
+                <div class="frameworklefttbox">
+                    <a class="notBlue" href="#howto">
+                        <p class="mainlink">The power of the design doc</p>
+                        <!--                    <h4 class="linkdesc">frameworks, phases, adapting</h4>-->
+                    </a>
+
+                    <a class="notBlue" href="#process1top">
+                        <p class="mainlink">What is a process book?</p>
+                        <!--                    <h4 class="linkdesc">describe, interpret, evaluate, plan ahead</h4>-->
+                    </a>
+
+                    <a class="notBlue" href="#process2top">
+                        <p class="mainlink">Development Framework</p>
+                        <!--                    <h4 class="linkdesc">what?, so what?, now what?</h4>-->
+                    </a>
+
+                    <a class="notBlue" href="#process3top">
+                        <p class="mainlink">Active Reviewing</p>
+                        <!--                    <h4 class="linkdesc">facts, feelings, findings, future</h4>-->
+                    </a>
+                    <a class="notBlue" href="#process4top">
+                        <h4 class="mainlink">Reflective Cycle</h4>
+                        <!--                    <h4 class="linkdesc">description, feelings, evaluation, analysis, conclusion, action plan</h4>-->
+                    </a>
+                    <a class="notBlue" href="#process5top">
+                        <h4 class="mainlink">Integrated Reflective Cycle</h4>
+                        <!--                    <h4 class="linkdesc">experience, action, tehory</h4>-->
+                    </a>
+
+                    <!--                <img height="64" width="64" src="../images/manual.gif" style="margin-top: 32px;">-->
+                </div>
+            </div>
+
+
+            <div class="frameworkrighttbox">
+
+
+
+
+                <div id="anchor1" class="container-fluid d-flex  justify-content-center bigprocesscontainer">
+
+
+                    <div class="accordioncontainer">
+                        <h3 class="accordiantitle" id="howto">the power of the design doc</h3>
+                        <h6 class="accordioncontainertext ">Taking the time to tailor one’s process helped us think broadly and not dive too fast into the details, to identify patterns and relationships in what were conceptual and visual systems. It helped us to identify core problems before diving into solutions, no matter the deliverable.<br><br>You’re often dealing with complex problems that stem from a variety of sources. When you are ready to move onto solving that problem, how do you keep track of the multiple directions you’ll explore? Why one worked over the rest? Do you have the links to those research findings you keep referencing? What exactly do you mean by the system? What about that meeting where you received feedback that might completely change your favoured direction? Did you make sure to take notes?
+                            <div class="processbreaker"></div>
+
+                            <div class="notiongrabcontainer">
+                                <p class="accordioncontainertext ">You can use something like Notion to keep track of your project process, with an education account you can store your screenshots in a place with descriptions for later reference. Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</p>
+                                <div class="notioncardcontainer">
+                                    <div class="card" style="width: 50%;">
+                                        <img src="../images/notion1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Design Project Notion Template</h5>
+
+                                            <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 50%;">
+                                        <img src="../images/notion2.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Design Process Notion Template</h5>
+
+                                            <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </h6>
+
+                        <!--        ACCORDIAN 1-->
+                        <h3 class="accordiantitle" id="process1top">What is a process book?</h3>
+                        <p class="accordioncontainertext ">A good process book includes all the stages of the design process from preliminary research through thumbnails, sketches, wire frames, comps, and final designs. It also explains the process through an incorporated narrative. Carefully chosen words and images demonstrate the thinking and development that led to your final design. </p>
+
+
+                        <h3 class="accordiantitle" id="process2top">What goes into a process book?</h3>
+                        <p class="accordioncontainertextmini "> Your process book should tell a coherent story through descriptions and pictures from beginning research to finished design. A thoughtful and well-designed process log becomes an important addition to your design portfolio. It tells a story. Bear in mind that books have introductions, captions, notes, and most importantly, a narrative—a beginning, a middle and an end. A 60-page collage of outtakes with no text is not a process book.<br> </p>
+                        <p class="accordioncontainertextmini"> This page divides the process document into 6 sections that you can map onto the double diamond proces document</p>
+
+                        <img src="../images/processphases.png" alt="Process Cycle" class="processcycle">
+                        <p class="accordioncontainertextmini ">Bear in mind that a process doc, is also a design problem. Think of a way to communicate your process that unifies everything inside the book. Create a layout structure on a design application like InDesign, Illustrator, or Adobe XD, and plan what will go on each page. Pick your colours and fonts, you should also organise your book into sections - for example introduction, research, analysis, development, and conclusions and include a cover with your name, the project title, and the course title</p>
+                        <p class="accordioncontainertext processalert"> !! Remember this isn't the only way to create a process document, use this as a base but confirm with your professors in case they want something specific.</p>
+
+                        <!--SECTIONS START-->
+                        <h3 class="accordiantitle" id="debrief">Debrief</h3>
+                        <p class="accordioncontainertextmini">
+                            Some of the first things to mention in your process documentation are the high level stuff you went through at the start of your process. The contents of this section can change based on the type of project you're tackling.
+                        </p>
+                        <ul class="processlist ">
+                            <p>
+                                <li>
+                                    What would be the project statement of your project? Or your How Might We statement for the process?
+                                </li>
+                                <li>
+                                    What were some of the assumptions you made going into the project? This could be assumptions about the platform (This project would have to be a mobile app because..) or assumptions about users (users won't be willing to do...).
+                                </li>
+                                <li>
+                                    Remember it's okay if your assumptions aren't validated by research later, it's a part of of the process, and shows you you actually take research and process into consideration.
+                                </li>
+                                <li>
+                                    What was your process plan? How did you get from problem to solution? Why did you use this plan? Was it effective? What would you change about it next time?
+                                </li>
+                                <li>
+                                    What did you assume you could or couldn't accomplish when forming the plan (We knew we could do...because... Or we knew we couldn't do... because...)?
+                                </li>
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+                        <!--SECTION 2-->
+                        <h3 class="accordiantitle" id="research">Research</h3>
+                        <p class="accordiantextmini">
+                            This is the section to talk about your research and inspiration. Describe and visualise your primary and secondary research, you can include use screenshots, links, charts, diagrams, quotes from users, competitive analysis.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    Ideally, when you present your research in a process doc you should show everything: what did you read, listen to and look at? Who did you talk to? What do your notes look like? How did you decide what was most important? How did you know when you were finished with your research?
+                                </li>
+                                <li>
+                                    But remember to distill the research and present it properly, rather than putting everything in as is. You want to curate the research to show why these were relevant to your process, while also showing you were curious.
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 3-->
+                        <h3 class="accordiantitle" id="analysis">analysis</h3>
+                        <p class="accordiantextmini">
+                            This is the section to talk about your research and inspiration. Describe and visualise your primary and secondary research, you can include use screenshots, links, charts, diagrams, quotes from users, competitive analysis.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    Ideally, when you present your research in a process doc you should show everything: what did you read, listen to and look at? Who did you talk to? What do your notes look like? How did you decide what was most important? How did you know when you were finished with your research?
+                                </li>
+                                <li>
+                                    But remember to distill the research and present it properly, rather than putting everything in as is. You want to curate the research to show why these were relevant to your process, while also showing you were curious.
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 3-->
+                        <h3 class="accordiantitle" id="research">Research</h3>
+                        <p class="accordiantextmini">
+                            This is the section to talk about your research and inspiration. Describe and visualise your primary and secondary research, you can include use screenshots, links, charts, diagrams, quotes from users, competitive analysis.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    Ideally, when you present your research in a process doc you should show everything: what did you read, listen to and look at? Who did you talk to? What do your notes look like? How did you decide what was most important? How did you know when you were finished with your research?
+                                </li>
+                                <li>
+                                    But remember to distill the research and present it properly, rather than putting everything in as is. You want to curate the research to show why these were relevant to your process, while also showing you were curious.
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 3-->
+                        <h3 class="accordiantitle" id="analysis">Anlaysis</h3>
+                        <p class="accordiantextmini">
+                            This section doesn't have to be huge, you can be very to the point about the things that truly matter to your solution.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    What came out of all your research? What were the key discoveries? What validated your assumptions, what challenged your assumptions, what prompted new assumptions you hadn't previously realised?
+                                </li>
+                                <li>
+                                    How did the inspiration sources you looked at effect your thinking or vision for your project from here on?
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 4-->
+                        <h3 class="accordiantitle" id="ideation">Ideation</h3>
+                        <p class="accordiantextmini">
+                            This is where you go over the your initial designs, your 'bad ideas', visualisations you worked on but scrapped, how did everything you di up until now become the project that you delivered?
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    Remember to not just dump everything, you need to curate it all so that who ever is reading your process documentation understands your thinking. You also don't need to show every tiny step, you pick and choose what what were the major shifts and why you made them.
+                                </li>
+                                <li>
+                                    Show your iterations and testing, how did you funnel down all your research and thinking into your delivered product?
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 5-->
+                        <h3 class="accordiantitle" id="deliver">Deliver</h3>
+                        <p class="accordiantextmini">
+                            This is a showcase of your final product, demonstrate the hand off products, make sure to show and mention everything you created for the project at this point.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    Make sure its the most important things, like a demo video, a link to a working website, a prototype.
+                                </li>
+                                <li>
+                                    You can use this section to connect back to your project statement and/or how might we. How did you satisfy your user's benefit sought
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+                        <!--SECTION 6-->
+                        <h3 class="accordiantitle" id="evaluate">Evaluate</h3>
+                        <p class="accordiantextmini">
+                            ou should conclude a case study with you've learned, what your outcomes were, and what you can do differently. Reflections can be included in small capacities to each section of the process doc, but definitely include a reflection for the end.
+                        </p>
+                        <ul class="processlist accordiantextmini">
+                            <p>
+                                <li>
+                                    You can get a better idea of what to mention in your reflections on the frameworks page. You can include reflections based on 1-2 prompts per section of the process doc, and then do a full overall reflection here at the end, or use the prompts to only do a reflection at the end of the project documentation.
+                                </li>
+                                <li>
+                                    You can get a better idea of what to mention in your reflections on the frameworks page. You can include reflections based on 1-2 prompts per section of the process doc, and then do a full overall reflection here at the end, or use the prompts to only do a reflection at the end of the project documentation
+                                </li>
+                                <li>
+                                    <p class="processalert">!! Add an appendix in the end for all the other things, including references.</p>
+                                    Any other work that supports the case study - sketches, proof of testing, research notes, interview notes, links to videos etc. should go into an appendix at the end. Remember to not use this section to just dump data, its still a part of your process document, it needs to be given context and should be formatted under the same headings as the sections of your process document (Plan, Discover, Insights, etc.).
+
+                                </li>
+
+                            </p>
+                        </ul>
+                        <div class="processbreaker"></div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     </div>
     <!--    </section>-->
 
