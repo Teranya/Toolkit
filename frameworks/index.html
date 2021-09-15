@@ -8,159 +8,450 @@
     <meta name="author" content="" />
     <title>Designers Toolkit | Frameworks</title>
     <!-- Favicon-->
-    <link rel="icon" type="../image/x-icon" href="/assets/favicon.png" />
+    <link rel="icon" type="../image/x-icon" href="../assets/favicon.png" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
     <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!--    <link rel="stylesheet" href="https://use.typekit.net/uqt1xnz.css">-->
     <link rel="stylesheet" href="https://use.typekit.net/myd2ndl.css">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
     <!--    Internal Stylesheet-->
 
+
     <style>
-        h1 {
-            font-family: gopher, sans-serif;
+    h1 {
+        /* font-family: sofia-pro, sans-serif; */
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+    }
+
+    body {
+        /* font-family: ヒラギノ角ゴProW3, sans-serif; */
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+    }
+
+    navbar-nav {}
+
+    button {
+        font-family: 'Roboto Mono', monospace;
+    }
+    /* typography */
+    .text-title{
+      font-size: 3rem;
+}
+/* nav */
+    .navmain {
+        background-color: white;
+        /* border-bottom-style: solid;
+        border-width: 1px; */
+
+    }
+
+    #logo {
+        padding-left: 2.5%;
+
+    }
+
+    .bg-light:hover {
+        background-color: #333 !important;
+        color: white;
+    }
+
+    .mainimg {
+
+        z-index: 99;
+    }
+
+    section {
+        height: 50vh;
+    }
+
+
+
+    .homesection {
+      margin: 10% 0;
+    }
+.maincontainer{
+max-width: 1024px;
+}
+    /*MASTHEAD*/
+    .masthead {
+        min-height: 700px;
+
+        /*            background-color: #f8f9fa;*/
+        /*            padding-top: 9.5rem;*/
+        /*            padding-bottom: 5rem;*/
+    }
+
+
+
+        .frameworkrighttbox h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 2.1rem;
+            font-kerning: normal;
         }
 
-        body {
-            font-family: sofia-pro, sans-serif;
-            /*            font-weight: 700;*/
-            font-style: normal;
+        .frameworkrighttbox {
+            margin-bottom: 4em;
+        }
+        h1.mainlink {
+            /*    margin-bottom: 1rem;*/
+            font-size: 1rem;
         }
 
-        button {
-            font-family: roboto-mono, monospace;
+        h1.notmainlink {
+            /*    margin-bottom: 1rem;*/
+            font-size: 1rem;
+            font-weight: 400;
         }
 
-        .navmain {
-            background-color: white;
+        h4.linkdesc {
+            margin-bottom: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: .7rem;
+            opacity: .8;
+        }
+        a.notBlue {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a.notBlue:hover {
+            color: #749CF8;
+            text-decoration: underline;
+        }
+
+
+        .frameworkrightbox h1:first-of-type {
+            margin-top: 0 !important;
+            margin-left: 0 !important;
+        }
+
+        .frameworkrightbox h1 {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 2.8rem;
+        }
+
+        .frameworkrightbox h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 2.1rem;
+            font-kerning: normal;
+        }
+
+        .frameworkrightbox h3 {
+            margin-top: 2rem;
+            margin-bottom: .75rem;
+            font-weight: 900;
+            font-size: 1.35rem;
+            font-kerning: normal;
+        }
+
+        .frameworkrightbox h4 {
+            margin-top: 1.5rem;
+            margin-bottom: .6rem;
+            font-weight: 900;
+            font-size: 1.25rem;
+            font-kerning: noral;
+            color: #595959;
+        }
+
+        .frameworkrightbo p {
+            margin-bottom: 1rem;
+            margin-top: 0;
+            font-size: 1.25rem;
+            line-height: 155%;
+            font-kerning: normal;
+        }
+
+        .frameworkrightbox li {
+            margin-bottom: .333rem;
+            margin-top: .333rem;
+            font-size: 1.25rem;
+            line-height: 155%;
+        }
+
+        .frameworkrightbox blockquote {
+            background-color: #F8EFE2;
+            margin: 0 0 8px 0;
+            padding: 16px 32px 4px 32px;
+            color: #595959;
+            font-style: italic;
+        }
+
+        /*accoordian blocks*/
+        .bigaccordiancontainer {
+            /*    padding-top: 5rem;*/
+        }
+
+
+        .accordioncontainertext {
+            line-height: 1.7em;
+            padding-bottom: 5rem;
+            font-weight: 400;
+        }
+
+        .accordioncontainertextmini {
+            line-height: 1.7em;
+            /*    padding-bottom: 5rem;*/
+            font-weight: 400;
+        }
+
+        .accordioncontainer {
+            max-width: 60vw;
+            padding-bottom: 15rem;
+        }
+
+        @media only screen and (max-width: 700px) {
+
+
+            .accordioncontainer {
+                max-width: 90vw;
+            }
+        }
+
+        h3.accordiantitle {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.2;
+            width: 100%;
+
+        }
+
+        .accordianline {
+            justify-items: end;
+            width: 100%;
+            /*
+            border-style: solid;
+            border-color: #2B566C;
+        */
+            opacity: .5;
+            /*    border-width: 1px;*/
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            text-align: right;
+        }
+
+        a.backtotop {
+            color: rgba(0, 0, 0, 0.63);
+            font-size: .8rem;
+            text-decoration: none;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+
+        .accordioncontainer h3 {
+            /*    padding: .5rem;*/
+            /*    font-family: calling-code, sans-serif;*/
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.2;
+            text-transform: uppercase;
+            /*    text-transform: uppercase;*/
+            color: rgba(0, 0, 0, 0.74);
+            /*    background-color: black;*/
+        }
+
+
+        .accordion {
+            margin: auto;
+            background-color: #fff;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+
+        }
+
+
+
+        #framework1 {
+            border-bottom-width: .2rem;
+            border-bottom-color: #8ea0be;
+            /*    background-color: #8ea0be;*/
             border-bottom-style: solid;
-            border-width: 1px;
+        }
+
+        #framework2 {
+            border-bottom-width: .2rem;
+            border-bottom-color: #B2C0D7;
+            /*    background-color: #B2C0D7;*/
+            border-bottom-style: solid;
+        }
+
+        #framework3 {
+            border-bottom-width: .2rem;
+            border-bottom-color: #7B8CC2;
+            /*    background-color: #7B8CC2;*/
+
+            border-bottom-style: solid;
+        }
+
+        #framework4 {
+            border-bottom-width: .2rem;
+            border-bottom-color: #A2B4C2;
+            /*    background-color: #A2B4C2;*/
+            border-bottom-style: solid;
+        }
+
+        #framework5 {
+            border-bottom-width: .2rem;
+            border-bottom-color: #689FAC;
+            /*    background-color: #689FAC;*/
+            border-bottom-style: solid;
+        }
+
+        .listend {
+            padding-bottom: .5rem;
+            /*    font-weight: 500;*/
+            font-size: .9rem;
+        }
+
+
+        .accordionactive,
+        .accordion:hover {
+            background-color: rgb(224, 235, 237);
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #1c1c1c;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordionactive:after {
+            content: "\2212";
+        }
+
+
+        .panel {
+            padding: 0 18px;
+            background-color: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            /*    border-width: 1px;*/
+            /*    border-color: black;*/
+            /*    border-style: solid;*/
+            line-height: 1.7rem;
+            font-size: .9rem;
+        }
+
+        .panel h5 {
+            padding-top: 2rem;
+            font-size: 1.1rem;
 
         }
 
-        #logo {
-            padding-left: 2.5%;
+        .panel p {
+            padding: 0 2rem 2rem 2rem;
 
-        }
 
-        .bg-light {
-            background-color: white !important;
-        }
-
-        .mainimg {
-
-            z-index: 99;
-        }
-
-        section {
-            height: 50vh;
         }
 
 
 
-        .homesection {}
 
-        /*MASTHEAD*/
-        .masthead {
-            /*            background-color: #f8f9fa;*/
-            /*            padding-top: 9.5rem;*/
-            /*            padding-bottom: 5rem;*/
+        .panel-default > .panel-heading {
+            color: #333;
+            background-color: #fff;
+            border-color: #e4e5e7;
+            padding: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
-        .masthead .masthead-device-mockup {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .panel-default > .panel-heading a {
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .panel-default > .panel-heading a:after {
+            content: "";
             position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            float: right;
+            transition: transform .25s linear;
+            -webkit-transition: -webkit-transform .25s linear;
         }
 
-        .masthead .masthead-device-mockup .circle {
-            position: absolute;
-            fill: url(#circleGradient);
-            width: 70%;
-            display: none;
+        .panel-default > .panel-heading a[aria-expanded="true"] {
+            background-color: #eee;
         }
 
-        .masthead .masthead-device-mockup .circle .gradient-start-color {
-            stop-color: #2937f0;
+        .panel-default > .panel-heading a[aria-expanded="true"]:after {
+            content: "\2212";
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
 
-        .masthead .masthead-device-mockup .circle .gradient-end-color {
-            stop-color: #9f1ae2;
+        .panel-default > .panel-heading a[aria-expanded="false"]:after {
+            content: "\002b";
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
         }
 
-        .masthead .masthead-device-mockup .shape-1 {
-            position: absolute;
-            height: 1rem;
-            width: 1rem;
-            transform: rotate(-10deg);
-            fill: #2937f0;
-            bottom: 1%;
-            left: 1%;
+        .accordion-option {
+            width: 100%;
+            float: left;
+            clear: both;
+            margin: 15px 0;
         }
 
-        .masthead .masthead-device-mockup .shape-2 {
-            position: absolute;
-            height: 0.75rem;
-            width: 0.75rem;
-            fill: #2937f0;
-            top: 1%;
-            right: 1%;
+        .accordion-option .title {
+            font-size: 20px;
+            font-weight: bold;
+            float: left;
+            padding: 0;
+            margin: 0;
         }
 
-        .masthead .masthead-device-mockup .device-wrapper {
-            max-width: 10rem;
+        .accordion-option .toggle-accordion {
+            float: right;
+            font-size: 16px;
+            color: #6a6c6f;
         }
 
-        @media (min-width: 576px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 70%;
-                display: block;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 12.5rem;
-            }
+        .accordion-option .toggle-accordion:before {
+            content: "Expand All";
         }
 
-        @media (min-width: 768px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 60%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 90%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 75%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 15rem;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .masthead .masthead-device-mockup .circle {
-                width: 70%;
-            }
-
-            .masthead .masthead-device-mockup .device-wrapper {
-                max-width: 17rem;
-            }
+        .accordion-option .toggle-accordion.active:before {
+            content: "Collapse All";
         }
 
     </style>
@@ -170,7 +461,7 @@
 
 <body>
 
-
+<div class="container maincontainer" >
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white navmain">
         <div class="container-fluid">
@@ -205,28 +496,38 @@
     <!-- Navbar -->
     <!-- Page content-->
 
-    <!--    <section class="">-->
-    <div class="container px-5 masthead mt-5 mb-5">
-        <div class="row gx-5 align-items-center">
 
-            <div class="col-lg-6">
-                <img class="img-fluid mainimg mb-4 mb-lg-0" src="../assets/img3.png" alt="...">
 
+    <div class="container  masthead mt-5 mb-5">
+        <div class="row d-flex  gx-5 align-items-start">
+          <!-- 1 TITLE -->
+            <div class=" col-12 order-lg-0">
+                    <h1 class="text-title lh-1 mb-3 text-left">tool:kit</h1>
 
             </div>
 
+  <!-- 2 Subtitle+Text -->
 
-            <div class="col-lg-6  order-lg-0">
-                <!-- Mashead text and app badges-->
-                <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                    <h1 class="display-1 lh-1 mb-3">Frameworks</h1>
-                    <p class="lead fw-normal text-muted mb-5">Using reflective models is one of the easiest ways to engage with the reflective process, this section covers a variety of frameworks and prompts to help your reflections.</p>
+            <div class="col-md-7 flex  col-12 order-lg-0">
+
+                <div class="mb-5 mb-lg-0  text-lg-start">
+  <h2 class="lh-1 mb-3 ">Frameworks</h2>
+                    <p class="lead fw-normal  mb-5">Using reflective models is one of the easiest ways to engage with the reflective process, this section covers a variety of frameworks and prompts to help your reflections.</p>
+                    <a class="btn btn-light mt-2 border border-dark" href="#start" role="button">get started</a>
                     <div class="d-flex flex-column flex-lg-row align-items-center">
 
                     </div>
                 </div>
             </div>
+  <!-- 3 image -->
+            <div class="col-md-5 col-12">
+                <img class="img-fluid mainimg mb-4 mb-lg-0" src="../assets/img3.png" alt="...">
 
+
+
+
+
+            </div>
         </div>
     </div>
     <!--    </section>-->
@@ -238,19 +539,635 @@
 
 
     <!--    Section1-->
-    <!--    <section class="bg-white homesection mb-5">-->
-    <div class="bg-white homesection mb-5 container px-5">
-
+    <div class="anchor" id="">
     </div>
-    <!--    </section>-->
 
+
+
+    <div class="frameworkpagecontainer row">
+
+
+            <div class="frameworklefttbox col order-lg-0" id="anchor1">
+                <a class="notBlue" href="#howto">
+                    <h1 class="mainlink">How to use this page</h1>
+                    <h4 class="linkdesc">frameworks, phases, adapting</h4>
+                </a>
+
+                <a class="notBlue" href="#framework1top">
+                    <h1 class="mainlink">DIEP strategy</h1>
+                    <h4 class="linkdesc">describe, interpret, evaluate, plan ahead</h4>
+                </a>
+
+                <a class="notBlue" href="#framework2top">
+                    <h1 class="mainlink">Development Framework</h1>
+                    <h4 class="linkdesc">what?, so what?, now what?</h4>
+                </a>
+
+                <a class="notBlue" href="#framework3top">
+                    <h1 class="mainlink">Active Reviewing</h1>
+                    <h4 class="linkdesc">facts, feelings, findings, future</h4>
+                </a>
+                <a class="notBlue" href="#framework4top">
+                    <h1 class="mainlink">Reflective Cycle</h1>
+                    <h4 class="linkdesc">description, feelings, evaluation, analysis, conclusion, action plan</h4>
+                </a>
+                <a class="notBlue" href="#framework5top">
+                    <h1 class="mainlink">Integrated Reflective Cycle</h1>
+                    <h4 class="linkdesc">experience, action, tehory</h4>
+                </a>
+
+                <!--                <img height="64" width="64" src="../images/manual.gif" style="margin-top: 32px;">-->
+            </div>
+
+
+            <div class="frameworkrighttbox col-md-8 col">
+
+
+
+                <div class="container-fluid d-flex  justify-content-center bigaccordiancontainer">
+
+
+                    <div class="accordioncontainer" id="howto">
+                        <h3 class="accordiantitle">how to use this section</h3>
+                        <h2>Reflection Frameworks</h2>
+                        <h6 class="accordioncontainertextmini">Using reflective frameworks is one of the easiest ways to engage with the reflective process. The frameworks on this page are adapted from reflection models by various educators, and are written to work with design projects. They will support you with structure, guidance and questions.</h6>
+                        <h2>Framework phases</h2>
+                        <h6 class="accordioncontainertextmini"> Each framework has different phases they cover, you can use that to fill the flow of your reflection / process doc with prompts from each as guiding points for the content. You can also use the phases as a checklist of sections to cover within an individal reflection promp you've been assigned and use 1-2 prompts from each phase. Some frameworks are more detailed than others in the number of phases they cover, you'll find overalps in the overall coverage of the frameworks
+                        </h6>
+
+                        <div class="accordioncontainertext " style="max-width:800px; margin:auto;"> </div>
+                        <h5 class="accordioncontainertextmini">Find your own style for how to fit reflection frameworks into your process.</h5>
+
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div> -->
+                        <div class="accordianline"></div>
+
+                        <!--        ACCORDIAN 1-->
+                        <h3 class="accordiantitle" id="framework1top">Framework 1</h3>
+                        <h2>DIEP strategy</h2>
+                        <p>Super simple, but probably not as much of a deep dive into reflection, the four steps in this approach are to describe, interpret, evaluate and plan.</p>
+
+                        <button class="accordion" id="framework1"> describe </button>
+                        <div class="panel">
+                            <h5>
+                                Describe objectively what happened </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What did you do for each phase of the process?</li>
+                                    <li>What did you read through the process?</li>
+                                    <li>What were your inspirations?</li>
+                                    <li>What was some feedback or critique you got?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework1"> interpret </button>
+                        <div class="panel">
+                            <h5>
+                                Consider why events happened in the way they did. Explain:
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What you saw and heard. </li>
+                                    <li>Your new insights.</li>
+                                    <li>our connections with other learning</li>
+                                    <li>Your feelings - towards the project, positive feelings about the process, negative feelings about the process etc.</li>
+                                    <li>Answer the question: ‘what might this mean?’
+                                        <ul>
+                                            <li>Could be regarding something that went well</li>
+                                            <li>Could be regarding something that didn't go well</li>
+
+
+                                        </ul>
+                                    </li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework1">evaluate</button>
+                        <div class="panel">
+                            <h5>
+                                Make judgments that are clearly connected to observations you have made. Answer the questions:
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What is my opinion about this experience?</li>
+                                    <li>What is the value of this experience?</li>
+                                    <li>Why do I think this?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <button class="accordion" id="framework1">plan ahead</button>
+                        <div class="panel">
+                            <h5>
+                                Plan how this information will be useful to you
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>Consider: In what ways might this learning experience serve me in my: Course program, Future career, Life generally
+                                        <ul>
+                                            <li>Hard skills you learnt that might tie into the program and your future career</li>
+                                            <li>Soft skills you learnt that might tie into the program and your future career </li>
+                                            <li>Understanding of something that ties into your career as awhole </li>
+                                        </ul>
+                                    </li>
+                                    <li>Answer the question: ‘How will I transfer or apply my new knowledge and insights in the future?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <div class="accordianline"></div>
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div>-->
+                        <!--        ACCORDIAN 1 ENDS -->
+
+                        <!--        ACCORDIAN 2-->
+                        <h3 class="accordiantitle" id="framework2top">framework 2</h3>
+                        <h2>development framework</h2>
+                        <p>The simplicity of this model is both a great strength and a possible limitation. It is very easy to remember and can be applied to any field or experience. Make sure to use the prompts for each section not just the main three questions.</p>
+                        <button class="accordion" id="framework2"> the details| <b> what?</b> </button>
+                        <div class="panel">
+                            <h5>
+                                Describe details of what happened in the experience in as much detail as you find necessary, cover all your key decisions and your reason for making them.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What surprised you in your process?</li>
+                                    <li>What were your personal goals for the project? These are your personal goals for what you did - better grades, to try a new skill, to have a type of portfolio piece</li>
+                                    <li>What were you trying to achieve with the project? The goal of the design or product.</li>
+                                    <li>What was good or bad about the process? You define what qualifies as good or bad for you.</li>
+                                    <li>What did you do that really stands out to you?
+                                        <ul>
+                                            <li>A major decision you made?</li>
+                                            <li> A new skill you tried?</li>
+                                            <li>Implemented a new research result?</li>
+                                        </ul>
+                                    </li>
+                                    <li>Did you get stuck at any point of the process? What do you think was the difficulty / reason / problem that caused it? </li>
+                                    <li>What were major successes within the process for you? What do you think was the skill / knowledge / reason / action that helped you achieve that? </li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework2">the implications | <b>so what?</b> </button>
+                        <div class="panel">
+                            <h5>
+                                You might want to supplement your own knowledge and thoughts with other people’s ideas, references, and theories. This can be to show what helped shape your thoughts and further explore them.
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What does this experience / process teach you about your attitude in terms of design thinking? Do you have a different attitude towards things like ideating, research, iterating etc. </li>
+                                    <li>What was going through your mind through the process?</li>
+                                    <li>What did you base your decision making or actions on? Gut instinct, research, instruction, inspiration are some examples.</li>
+                                    <li>What other resources could you have used to help you through this process?</li>
+                                    <li>What could you have done different for a more desireable outcome? </li>
+                                    <li>What is your new understanding of the project now that you’ve completed it? </li>
+                                    <li>What does this process tell you about the way you work?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework2">the action plan | <b>now what?</b> </button>
+                        <div class="panel">
+                            <h5>
+                                In this section you can conclude on your learnings. You can use both your own realisations and theoretical literature to make sense of the experience. It can be useful to discuss how your experience has influenced your understanding of your professional or theoretical knowledge.
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What do you need to do in the future to do better in a similar project?</li>
+                                    <li>If you got stuck at any point of the process, what do you need to do in the future to avoid that? What might be the consequences of this new action? What considerations do you need to make sure this plan is successful?</li>
+                                    <li>What do you need to do to ensure that you will follow this future plan?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <div class="accordianline"></div>
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div>-->
+                        <!--        ACCORDIAN 2 ENDS -->
+
+                        <!--        ACCORDIAN 3-->
+
+                        <h3 class="accordiantitle" id="framework3top">framework 3</h3>
+                        <h2>active reviewing</h2>
+                        <p>This model can be used to think and reflect on a situation and can help to structure written reflections. It’s is easy to remember and goes over the main aspects of what is helpful to consider when reviewing an experience</p>
+                        <button class="accordion" id="framework3">experience | <b>facts</b> </button>
+                        <div class="panel">
+                            <h5>
+                                Here you can examine the sequence of events and key moments that took place in your process. If working in a team, it can be interesting to see if you agree on the facts. Be careful that the facts don't turn into opinions. <i>('X did this, and it had Y effect' NOT, 'X did this wrong thing') </i></h5>
+
+                            <ul>
+                                <p>
+                                    <li>Did anything unexpected happen? Any surprises?</li>
+                                    <li>Did anything very predictable happen?</li>
+                                    <li>What were some of the key moments in the process? This could be:
+                                        <ul classs="listend">
+                                            <li>A major research breakthrough</li>
+                                            <li>A major understanding of the process</li>
+                                            <li>Finding a supeer inspiring source of inspiration</li>
+                                            <li>A key decision you made</li>
+                                            <li>A key feedback/critique you received</li>
+                                            <li>Something important that went right</li>
+                                            <li>Something important that went wrong</li>
+                                        </ul>
+                                    </li>
+                                    <li>What were the most interesting moments or insights in the process of this project?</li>
+                                    <li>What were the turning points or critical moments in this project? What happened <i>to cause</i> these turning points or critical moments? What happened <i>after</i> these turning points or critical moments?</li>
+                                    <li>What most influenced your attitude and behaviour? This could be:
+                                        <ul classs="listend">
+                                            <li>Research you found</li>
+                                            <li>Previous experience</li>
+                                            <li>Something mentioned in class</li>
+                                        </ul>
+                                    </li>
+                                    <li>What didn't happen that you thought/hoped would happen? </li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework3">express | <b>feelings</b></button>
+                        <div class="panel">
+                            <h5>
+                                In this section you can describe the feelings in the process. Feelings can guide you to fully understanding the situation and so your learning is better grounded in the experience. <i>Be cautious that you do not use ‘felt’ as a judgement</i>, for example ‘I felt they were wrong’, or ‘my feeling was that it was a good choice’. The latter can be rewritten as <i>‘I felt confident while making the choice</i>.
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What are some of the feelings you experienced?
+                                        <ul classs="listend">
+                                            <li>When did you feel your lowest in the process?</li>
+                                            <li>When did you feel your best in the process?</li>
+                                            <li>Did you feel like you were starting to burnout at any point? </li>
+                                            <li>Did you feel helpless at any point?</li>
+                                        </ul>
+                                    </li>
+                                    <li>At what point did you feel most or least motivated in the process?</li>
+                                    <li>What other feelings where present in the situation?
+                                        <ul classs="listend">
+                                            <li>Was this a group project that had other peoples emotions involved?</li>
+                                            <li>Did this project have you empathizing with user feelings?</li>
+                                            <li>Was there a point where your peers / friends felt similar to you? </li>
+                                        </ul>
+                                    </li>
+                                    <li>At what points were you most aware of controlling/ expressing your feelings?</li>
+                                    <li>What were your personal highs and lows?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <button class="accordion" id="framework3">examine | <b>findings</b></button>
+                        <div class="panel">
+                            <h5>
+                                Here you can start investigating and interpreting the situation to find meaning and make judgements. <i>The main questions are ‘how’ and ‘why’.</i>
+                            </h5>
+
+                            <ul>
+                                <p>
+                                    <li>What’s something that worked out well in the process? Why did it work? What did you do to ensure it worked?</li>
+                                    <li>What’s something that didn’t work out well in the process? Why did it <i>not</i> work? What did you do to try to<i> make it</i> work?</li>
+                                    <li>Why did you do what you did? Why did you not do something else? </li>
+                                    <li>How did your feelings influence what you said and did? How did you get the outcome that happened?</li>
+                                    <li>Were there any missed opportunities or regrets?
+                                        <ul class="listend">
+                                            <li>Something you didn't try?</li>
+                                            <li>Something you didn't spend enough time on?</li>
+                                            <li>Something you spent <i>too much</i> time on?</li>
+                                            <li>Anything you didn't research enough</li>
+                                            <li classs="listend">A step in the design process you skipped?</li>
+                                        </ul>
+                                    </li>
+                                    <li>What would you like to have done differently/ more of/ less of?
+                                        <ul class="listend">
+                                            <li>Maybe spend less time on a step of the process?</li>
+                                            <li>Manage time or resources differently?</li>
+                                            <li>Taken advantage of resources available to you?</li>
+                                            <li>Participate in more class critiques</li>
+                                            <li>Work better in a team?</li>
+                                        </ul>
+                                    </li>
+                                    <li>What was most/ least valuable part of the process for you?</li>
+                                    <li>What’s an insight you have learnt about your process or thinking?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+
+                        <button class="accordion" id="framework3">explore | <b>future</b></button>
+                        <div class="panel">
+                            <h5>
+                                Here you take your findings and consider how to implement them in the future. This stage might involve preparing carefully for the next adventure, but it could equally involve making a commitment to 'dive in' and find the confidence and courage to take bigger risks. This 'planning' stage would usually involve setting targets and raising safety awareness, but it is equally important to keep the sense of curiosity and exploration alive - if the experience is to be both educational and adventurous.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>How do you think you can use what you have learned in this project?
+                                        <ul class="listend">
+                                            <li>How does the purpose of this project fit into your design career as a whole?</li>
+                                            <li>What's a skill you learnt that can be used in future projects?</li>
+                                            <li>What's something that didn't work that you know how to improve next time?</li>
+                                            <li>Something you missed out on that you can plan to incorporate next time?</li>
+                                            <li>A soft skill you picked up on that will help you moving forward? e.g., Communication, Teamwork, Presentation, Conflict Management</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>What has already changed in your process, thinking, or understanding as a result of something you learnt from this project?</li>
+                                    <li>What plan can you make to actively use these learnings in the future?</li>
+                                    <li>How can you integrate the feedback and critique you received for this process for future projects? e.g.,
+                                        <ul class="listend ">
+                                            <li>Remembering to not complicate the solution</li>
+                                            <li>Being more conscious of narrative </li>
+                                            <li>Actively remembering to do a specific part of the design process </li>
+                                        </ul>
+                                    </li>
+                                    <li>What insights can be used to improve your future design process? e.g.,
+                                        <ul class="listend">
+                                            <li>You spent too much time on one step, so you'll be more conscious of sectioning off time.</li>
+
+                                        </ul>
+                                    </li>
+                                    <li>What’s an insight you have learnt about your process or thinking?</li>
+                                    <li>What can you do to avoid moments you regretted in this process? </li>
+                                    <li>What can you do to replicate good moments/ opportunities in this process?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <div class="accordianline"></div>
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div>-->
+                        <!--        ACCORDIAN 3 ENDS -->
+
+
+                        <!--        ACCORDIAN 4-->
+
+                        <h3 class="accordiantitle" id="framework4top">framework 4</h3>
+                        <h2>reflective cycle </h2>
+                        <p>This model is a good way to work through an experience. This can be either a stand-alone experience or a situation you go through frequently, for example meetings with a team you have to collaborate with.</p>
+                        <!--        Panel 3.1-->
+                        <button class="accordion" id="framework4">the experience | <b>description</b></button>
+                        <div class="panel">
+                            <h5>
+                                In this section, you have a chance to describe the process in detail, or elements of the process you didn’t mention in a process doc or presentation. The main points to include here concern what happened, your feelings and conclusions will come later.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What were you making / trying to accomplish with the project?</li>
+                                    <li>What were your personal goals for the project? These are not the goals of the product, but your goals for what you did - better grades, to try a new skill, to have a type of portfolio piece.</li>
+                                    <li> Did you achieve your personal goals with the project? What did you do to try and achieve your personal goals in this project?</li>
+                                    <li>What sources did you read/access for this project?
+                                        <ul class="listend">
+                                            <li>Secondary research</li>
+                                            <li>Primary research</li>
+                                            <li>Visual inspiration</li>
+                                            <li>Technical research - libraries, capabilities, examples</li>
+                                            <li>Technical resources - tutorials, example code</li>
+                                        </ul>
+                                    </li>
+                                    <li>Did you try any new skills for the project? If yes, how did that experience go?</li>
+                                    <li>Did you work with other people for this project? If yes, how did they contribute?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <!--        Panel 3.2-->
+                        <button class="accordion" id="framework4">emotions and thoughts | <b>feelings</b></button>
+                        <div class="panel">
+                            <h5>In this section, you can explore any feelings or thoughts that you had during the experience and how they may have impacted the experience.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What were you feeling while working on the project?
+                                        <ul class="listend">
+                                            <li>At what point did you feel negatively about the project? What caused that? </li>
+                                            <li>What did you feel when you were first assigned this project? Why?</li>
+                                            <li>What prompted feeling positively or negatively about the project? </li>
+                                            <li>Did you feel burnt out any point?</li>
+                                        </ul>
+                                    </li>
+                                    <li>What were you feeling before you started working on the project, when you were assigned this project? Did these feelings effect your process in any way?</li>
+                                    <li> How did you feel when you got stuck at any point of the process? Why?</li>
+                                    <li>What sources did you read/access for this project?</li>
+                                    <li>How did you feel when you figured something out? Why?</li>
+                                    <li>How are you feeling now? What do you feel about the project right this moment?</li>
+                                    <li>What do you think other people felt about the project?
+                                        <ul class="listend">
+                                            <li>If this project was done in a group what were common moments of negative or positive feelings? What prompted that?</li>
+                                            <li>What were common moments of negative or positive feelings for your class ? Why?</li>
+                                            <li>What were common moments of major emotions in your group of friends working on the project? Why? </li>
+                                        </ul>
+                                    </li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <!--        Panel 3.3-->
+                        <button class="accordion" id="framework4">looking back | <b>evaluation</b></button>
+                        <div class="panel">
+                            <h5>In this section, you have a chance to evaluate what worked and what didn’t work in the situation. Try to be as objective and honest as possible. To get the most out of your reflection focus on both the positive and the negative aspects of the situation, even if it was primarily one or the other.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What were things that worked out in the project?</li>
+                                    <li>What were things that didn’t work out in the project?</li>
+                                    <li> How did you feel when you got stuck at any point of the process? Why?</li>
+                                    <li>What do you think went well, or what parts were most successful according to you?</li>
+                                    <li>What do you think didn’t go well, or what parts were least successful according to you?</li>
+                                    <li>What was good and bad about this project for you?</li>
+                                    <li>What was good and bad about the way your process turned out? </li>
+                                    <li>What did you that helped cause a good moment to happen? Something that worked out as you hoped, the right resource, the right tool? </li>
+                                    <li>What did you that couldn’t prevent a bad moment from happening? Something that didn’t work, or wasn’t the right tactic? </li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <!--        Panel 3.4-->
+                        <button class="accordion" id="framework4">making sense | <b>analysis</b></button>
+                        <div class="panel">
+                            <h5>The analysis step is where you have a chance to make sense of what happened. Up until now you have focused on details around what happened in the situation. Now you have a chance to extract meaning from it. You want to target the different aspects that went well or poorly and ask yourself why. If you are looking to include academic literature, this is the natural place to include it.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>Why do you think things went well?</li>
+                                    <li>Why do you think things didn't go well?</li>
+                                    <li>What more could you have done?</li>
+                                    <li>What can you learn to improve the experience?</li>
+                                    <li>What's your opinion on the overall experience of the project?</li>
+                                    <li>What do you think is the value of the experience? Why?
+                                        <ul class="listend">
+                                            <li>Did you develop / improve a soft skill like communication or team work </li>
+                                            <li>Did you develop / improve a soft skill like 3D modelling or typographic design</li>
+                                            <li>What did this project and course teach you about your overall design practice? e.g., Understanding how backend fits into app or web design how databases are utilized for custom experiences </li>
+                                        </ul>
+                                    </li>
+
+                                </p>
+                            </ul>
+
+                        </div>
+                        <!--        Panel 4.5-->
+                        <button class="accordion" id="framework4">wrapping up | <b>conclusion</b></button>
+                        <div class="panel">
+                            <h5>At this step you plan for what you would do differently in a similar or related situation in the future. It can also be extremely helpful to think about how you will help yourself to act differently – such that you don’t only plan what you will do differently, but also how you will make sure it happens. <br>
+
+                                Sometimes just the realisation is enough, but other times reminders might be helpful.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What did you learn from the entire situation?</li>
+                                    <li>What did you learn from looking back at the process?</li>
+                                    <li>What could you have done differently to make this a more positive experience?</li>
+                                    <li>What skills do you need to develop to handle a project like this better? e.g.,
+                                        <ul class="listend">
+                                            <li>A soft skill like presenting or communication </li>
+                                            <li>A hard skill like a coding language or a major design skill</li>
+                                        </ul>
+                                    </li>
+                                    <li>Is there anything else you could have done?</li>
+
+                                </p>
+                            </ul>
+
+                        </div>
+                        <!--        Panel 4.6-->
+                        <button class="accordion" id="framework4">moving forward | <b>action plan</b></button>
+                        <div class="panel">
+                            <h5>At this step you plan for what you would do differently in a similar or related situation in the future. It can also be extremely helpful to think about how you will help yourself to act differently – such that you don’t only plan what you will do differently, but also how you will make sure it happens. <br>
+
+                                Sometimes just the realisation is enough, but other times reminders might be helpful.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>In what ways might this learning experience serve you in your future projects?</li>
+                                    <li>In what ways might this learning experience serve you in your future career?</li>
+                                    <li>In what ways might this learning experience serve you in your personal development?</li>
+                                    <li>How can you transfer or apply your new knowledge and insights in the future?</li>
+
+                                </p>
+                            </ul>
+
+                        </div>
+                        <div class="accordianline"></div>
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div>-->
+                        <!--        ACCORDIAN 4 ENDS -->
+
+
+                        <!--        ACCORDIAN 5-->
+                        <h3 class="accordiantitle" id="framework5top">framework 5</h3>
+                        <h2>integrated
+                            reflective cycle</h2>
+                        <p>In contrast to the reflective cycle, the integrated reflective cycle contains fewer steps which may make it simpler to work through, while still being able to bring out the same realisations and learning.</p>
+                        <!--        Panel 5.1-->
+                        <button class="accordion" id="framework5">describe the process | <b>experience</b></button>
+                        <div class="panel">
+                            <h5>Describe details of the progress in as much detail as you find necessary, if you're writing this for someone else to read, it is important to define context clearly</h5>
+
+                            <ul class="listend">
+                                <p>
+                                    <li>What happened?</li>
+                                    <li>What were the contributing factors for the outcome?</li>
+                                    <li>What do you think were the key moments in the process? Why were these key moments important? What contributed to these key moments (what caused them)?</li>
+                                    <li>Did you have any new understandings that emerged through your process? </li>
+                                    <li>What were the catalyst for any new understandings that emerged?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <!--        Panel 5.2-->
+                        <button class="accordion" id="framework5">identify opportunities | <b>action</b></button>
+                        <div class="panel">
+                            <h5>Here is where you start to make sense of what happened. You should question yourself and your assumptions to understand what led you to your actions – this will allow you to challenge the status quo of your actions and assumptions.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What were you trying to achieve with this project, what were your personal goals?</li>
+                                    <li>What assumptions did you make in the process? What were the consequences of these assumptions?
+                                        <ul class="listend">
+                                            <li>Assumptions on user needs and requirements?</li>
+                                            <li>Assumptions about your own abilities and comfort with skills?</li>
+                                            <li>Assumptions you made about other people you're working with?</li>
+                                            <li>Assumptions about the project and its requirements?</li>
+
+                                        </ul>
+                                    </li>
+                                    <li>How did you feel about key moments in the process?</li>
+                                    <li>How do you feel about the entire process looking back at it? </li>
+                                </p>
+                            </ul>
+
+                        </div>
+
+                        <!--        Panel 5.3-->
+                        <button class="accordion" id="framework5"> larger context | <b>theory</b></button>
+                        <div class="panel">
+                            <h5>In this section you can conclude on your learnings. You can use both your own realisations and theoretical literature to make sense of the experience.
+
+                                It can be useful to discuss how your experience has influenced your understanding of your professional or theoretical knowledge.</h5>
+
+                            <ul>
+                                <p>
+                                    <li>What What has this experience contributed to you professional knowledge as a designer?</li>
+                                    <li>What has this experience taught you that you can apply to a similar situation in the future?
+                                    </li>
+                                    <li>What have you learned in general?</li>
+                                </p>
+                            </ul>
+
+                        </div>
+                        <div class="accordianline"></div>
+                        <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div>-->
+                        <!--        ACCORDIAN 4 ENDS -->
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+                    </div>
+
+    <!--    </section>-->
+  </div>
 
 
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js">
+
+
+    </script>
+    <script>
+    $(window).on('load', function() {
+        $(window).scrollTop(0);
+    });
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("accordionactive");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 </body>
 
 </html>
