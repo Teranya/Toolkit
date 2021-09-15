@@ -29,6 +29,24 @@
 
 
   <style>
+  /* @media (max-width: 700px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    top: 0;
+    z-index: 99;
+
+  }
+  .masthead{
+    margin-top: 100px !important;
+  }
+} */
     h1 {
       /* font-family: sofia-pro, sans-serif; */
       font-family: 'Roboto Mono', monospace;
@@ -56,7 +74,7 @@
     .navmain {
       background-color: white;
       /* border-bottom-style: solid;
-        border-width: 1px; */
+          border-width: 1px; */
 
     }
 
@@ -91,7 +109,7 @@
 
     /*MASTHEAD*/
     .masthead {
-      min-height: 700px;
+      min-height: 500px;
 
       /*            background-color: #f8f9fa;*/
       /*            padding-top: 9.5rem;*/
@@ -100,7 +118,7 @@
 
 
 
-    .frameworkrighttbox h2 {
+    .frameworkrightbox h2 {
       margin-top: 3rem;
       margin-bottom: 1rem;
       font-family: 'Lato', sans-serif;
@@ -109,7 +127,7 @@
       font-kerning: normal;
     }
 
-    .frameworkrighttbox {
+    .frameworkrightbox {
       margin-bottom: 4em;
     }
 
@@ -246,9 +264,9 @@
       justify-items: end;
       width: 100%;
       /*
-            border-style: solid;
-            border-color: #2B566C;
-        */
+              border-style: solid;
+              border-color: #2B566C;
+          */
       opacity: .5;
       /*    border-width: 1px;*/
       margin-top: 3rem;
@@ -495,6 +513,7 @@
 
     @media only screen and (min-width: 600px) {
       .frameworkleftbox {
+        width: 300px;
         position: -webkit-sticky;
         position: sticky;
         top: 32px;
@@ -510,6 +529,7 @@
     @media only screen and (max-width: 600px) {
 
       .frameworkleftbox {
+      width: 300px;
         position: -webkit-sticky;
         position: sticky;
         top: 32px;
@@ -531,11 +551,10 @@
       font-kerning: normal;
     }
 
-    .frameworkrighttbox {
+    .frameworkrightbox {
       margin-bottom: 4em;
     }
   </style>
-
 
 </head>
 
@@ -620,15 +639,13 @@
 
 
     <!--    Section1-->
-    <div class="anchor" id="">
-    </div>
 
 
 
-    <div class="frameworkpagecontainer" id="anchor1">
+    <div class="frameworkpagecontainer" id="start">
 
       <div>
-        <div class="frameworkleftbox" id="anchor1">
+        <div class="frameworkleftbox" >
           <a class="notBlue" href="#howto">
             <h1 class="mainlink">How to use this page</h1>
             <h4 class="linkdesc">frameworks, phases, adapting</h4>
@@ -676,7 +693,7 @@
               <h6 class="accordioncontainertextmini"> Each framework has different phases they cover, you can use that to fill the flow of your reflection / process doc with prompts from each as guiding points for the content. You can also use the phases as a checklist of sections to cover within an individal reflection promp you've been assigned and use 1-2 prompts from each phase. Some frameworks are more detailed than others in the number of phases they cover, you'll find overalps in the overall coverage of the frameworks
               </h6>
 
-              <div class="accordioncontainertext " style="max-width:800px; margin:auto;"> </div>
+              <div class="accordioncontainertext ">; margin:auto;"> </div>
               <h5 class="accordioncontainertextmini">Find your own style for how to fit reflection frameworks into your process.</h5>
 
               <!--                        <div class="accordianline"><a class="backtotop" href="#anchor1">back to top &#x2191;</a></div> -->
