@@ -145,7 +145,7 @@
         }
 
         a.notBlue:hover {
-            color: #749CF8;
+            color: #B77EEE;
             text-decoration: underline;
         }
 
@@ -215,6 +215,15 @@
             /*    padding-top: 5rem;*/
         }
 
+        .alert {
+            padding: 20px;
+            background-color: white;
+            border-color: #B77EEE;
+            border-width: 3px;
+            margin-bottom: 15px;
+        }
+
+        .alert h4 {}
 
         .accordioncontainertext {
             line-height: 1.7em;
@@ -300,7 +309,9 @@
 
         }
 
-
+        .processbreaker {
+            padding: 30px;
+        }
 
         #framework1 {
             border-bottom-width: .2rem;
@@ -349,6 +360,11 @@
 
         }
 
+        .notioncardcontainer {
+            margin-top: -10px;
+            display: flex;
+            flex-direction: row;
+        }
 
         .accordionactive,
         .accordion:hover {
@@ -548,6 +564,7 @@
         .frameworkrightbox {
             margin-bottom: 4em;
         }
+
     </style>
 
 
@@ -644,7 +661,7 @@
             <div>
                 <div class="frameworkleftbox">
                     <a class="notBlue" href="#howto">
-                        <h1 class="mainlink">The power of the design doc</h1>h1>
+                        <h1 class="mainlink">The power of the design doc</h1>
                         <!--                    <h4 class="linkdesc">frameworks, phases, adapting</h4>-->
                     </a>
 
@@ -653,21 +670,29 @@
                         <!--                    <h4 class="linkdesc">describe, interpret, evaluate, plan ahead</h4>-->
                     </a>
 
-                    <a class="notBlue" href="#process2top">
-                        <h1 class="mainlink">Development Framework</h1>
+                    <a class="notBlue" href="#debrief">
+                        <h1 class="mainlink">Debrief </h1>
                         <!--                    <h4 class="linkdesc">what?, so what?, now what?</h4>-->
                     </a>
 
-                    <a class="notBlue" href="#process3top">
-                        <h1 class="mainlink">Active Reviewing</h1>
+                    <a class="notBlue" href="#research">
+                        <h1 class="mainlink">Research </h1>
                         <!--                    <h4 class="linkdesc">facts, feelings, findings, future</h4>-->
                     </a>
-                    <a class="notBlue" href="#process4top">
-                        <h1 class="mainlink">Reflective Cycle</h1>
+                    <a class="notBlue" href="#analysis">
+                        <h1 class="mainlink">Analysis </h1>
                         <!--                    <h4 class="linkdesc">description, feelings, evaluation, analysis, conclusion, action plan</h4>-->
                     </a>
-                    <a class="notBlue" href="#process5top">
-                        <h1 class="mainlink">Integrated Reflective Cycle</h1>
+                    <a class="notBlue" href="#ideation">
+                        <h1 class="mainlink">Ideation </h1>
+                        <!--                    <h4 class="linkdesc">experience, action, tehory</h4>-->
+                    </a>
+                    <a class="notBlue" href="#deliver">
+                        <h1 class="mainlink">Deliver </h1>
+                        <!--                    <h4 class="linkdesc">experience, action, tehory</h4>-->
+                    </a>
+                    <a class="notBlue" href="#evaluate">
+                        <h1 class="mainlink">Evaluate </h1>
                         <!--                    <h4 class="linkdesc">experience, action, tehory</h4>-->
                     </a>
 
@@ -689,31 +714,76 @@
                             <h6 class="accordioncontainertext ">Taking the time to tailor one’s process helped us think broadly and not dive too fast into the details, to identify patterns and relationships in what were conceptual and visual systems. It helped us to identify core problems before diving into solutions, no matter the deliverable.<br><br>You’re often dealing with complex problems that stem from a variety of sources. When you are ready to move onto solving that problem, how do you keep track of the multiple directions you’ll explore? Why one worked over the rest? Do you have the links to those research findings you keep referencing? What exactly do you mean by the system? What about that meeting where you received feedback that might completely change your favoured direction? Did you make sure to take notes?
                                 <div class="processbreaker"></div>
 
-                                <div class="notiongrabcontainer">
-                                    <p class="accordioncontainertext ">You can use something like Notion to keep track of your project process, with an education account you can store your screenshots in a place with descriptions for later reference. Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</p>
-                                    <div class="notioncardcontainer">
-                                        <div class="card" style="width: 40%;">
-                                            <img src="../assets/notion1.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Design Project Notion Template</h5>
 
-                                                <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                <div class="container p-5">
+                                    <div class="row">
+                                        <div class="alert col-12">
+
+                                            <!--                                            <h4>Notion dashboards</h4>-->
+                                            You can use something like Notion to keep track of your project process, with an education account you can store your screenshots in a place with descriptions for later reference.
+                                            <hr>
+                                            <span class="mb-0">Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</span>
+                                        </div>
+                                        <!--
+                                        <div class="col-12 alert alert-success" role="alert">
+
+                                            <h4 class="alert-heading">Notion dashboards</h4>
+                                            You can use something like Notion to keep track of your project process, with an education account you can store your screenshots in a place with descriptions for later reference.
+                                            <hr>
+                                            <span class="mb-0">Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</span>
+                                        </div>
+-->
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="../assets/notion1.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Design Project Notion Template</h5>
+
+                                                    <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="card" style="width: 40%;">
-                                            <img src="../assets/notion2.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Design Process Notion Template</h5>
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="../assets/notion2.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Design Process Notion Template</h5>
 
-                                                <a target="_blank" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                                    <a target="_blank" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
+                                                </div>
                                             </div>
                                         </div>
-
-
-
                                     </div>
-
                                 </div>
+
+
+                                <!--
+                                <div class="notiongrabcontainer">
+
+<div class="notioncardcontainer">
+    <div class="card" style="width: 40%;">
+        <img src="../assets/notion1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Design Project Notion Template</h5>
+
+            <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
+        </div>
+    </div>
+    <div class="card" style="width: 40%;">
+        <img src="../assets/notion2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Design Process Notion Template</h5>
+
+            <a target="_blank" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
+        </div>
+    </div>
+
+
+
+</div>
+
+</div>
+-->
                             </h6>
 
                             <!--        ACCORDIAN 1-->
@@ -722,7 +792,8 @@
 
 
                             <h3 class="accordiantitle" id="process2top">What goes into a process book?</h3>
-                            <p class="accordioncontainertextmini "> Your process book should tell a coherent story through descriptions and pictures from beginning research to finished design. A thoughtful and well-designed process log becomes an important addition to your design portfolio. It tells a story. Bear in mind that books have introductions, captions, notes, and most importantly, a narrative—a beginning, a middle and an end. A 60-page collage of outtakes with no text is not a process book.<br> </p>
+                            <p class="accordioncontainertextmini "> Your process book should tell a coherent story through descriptions and pictures from beginning research to finished design. A thoughtful and well-designed process log becomes an important addition to your design portfolio. It tells a story.<br> <b>Bear in mind that books have introductions, captions, notes, and most importantly, a narrative—a beginning, a middle and an end. A 60-page collage of outtakes with no text is not a process book.</b>
+                            </p>
                             <p class="accordioncontainertextmini"> This page divides the process document into 6 sections that you can map onto the double diamond proces document</p>
 
                             <img src="../assets/processphases.png" alt="Process Cycle" class="processcycle">
@@ -772,43 +843,9 @@
                             </ul>
                             <div class="processbreaker"></div>
 
-                            <!--SECTION 3-->
-                            <h3 class="accordiantitle" id="analysis">analysis</h3>
-                            <p class="accordiantextmini">
-                                This is the section to talk about your research and inspiration. Describe and visualise your primary and secondary research, you can include use screenshots, links, charts, diagrams, quotes from users, competitive analysis.
-                            </p>
-                            <ul class="processlist accordiantextmini">
-                                <p>
-                                    <li>
-                                        Ideally, when you present your research in a process doc you should show everything: what did you read, listen to and look at? Who did you talk to? What do your notes look like? How did you decide what was most important? How did you know when you were finished with your research?
-                                    </li>
-                                    <li>
-                                        But remember to distill the research and present it properly, rather than putting everything in as is. You want to curate the research to show why these were relevant to your process, while also showing you were curious.
-                                    </li>
 
-                                </p>
-                            </ul>
-                            <div class="processbreaker"></div>
 
-                            <!--SECTION 3-->
-                            <h3 class="accordiantitle" id="research">Research</h3>
-                            <p class="accordiantextmini">
-                                This is the section to talk about your research and inspiration. Describe and visualise your primary and secondary research, you can include use screenshots, links, charts, diagrams, quotes from users, competitive analysis.
-                            </p>
-                            <ul class="processlist accordiantextmini">
-                                <p>
-                                    <li>
-                                        Ideally, when you present your research in a process doc you should show everything: what did you read, listen to and look at? Who did you talk to? What do your notes look like? How did you decide what was most important? How did you know when you were finished with your research?
-                                    </li>
-                                    <li>
-                                        But remember to distill the research and present it properly, rather than putting everything in as is. You want to curate the research to show why these were relevant to your process, while also showing you were curious.
-                                    </li>
-
-                                </p>
-                            </ul>
-                            <div class="processbreaker"></div>
-
-                            <!--SECTION 3-->
+                            <!--SECTION 4-->
                             <h3 class="accordiantitle" id="analysis">Anlaysis</h3>
                             <p class="accordiantextmini">
                                 This section doesn't have to be huge, you can be very to the point about the things that truly matter to your solution.
@@ -898,8 +935,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
     <!--    </section>-->
 
 
@@ -909,4 +945,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
-</body></html>
+</body>
+
+</html>
