@@ -7,7 +7,7 @@ tool:kit is a design reflection toolkit made for design students. This repo's wh
 
 
 
-![GtiHub cover for tool:kit](images/cover.png)
+![GtiHub cover for tool:kit](assets/cover.png)
 
 
 ## The website
