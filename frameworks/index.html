@@ -160,6 +160,12 @@
             text-decoration: underline;
         }
 
+        .btn:hover {
+            border-color: #749CF8 !important;
+            color: white;
+            background-color: #749CF8;
+        }
+
 
         .frameworkrightbox h1:first-of-type {
             margin-top: 0 !important;
@@ -358,7 +364,8 @@
 
         .accordionactive,
         .accordion:hover {
-            background-color: rgb(224, 235, 237);
+            /*            background-color: rgb(224, 235, 237);*/
+            background-color: rgba(116, 156, 248, 0.2);
         }
 
         .accordion:after {
@@ -554,7 +561,6 @@
         .frameworkrightbox {
             margin-bottom: 4em;
         }
-
     </style>
 
 </head>
@@ -1252,8 +1258,8 @@
     </script>
     <script>
         $(window).on('load', function() {
-            $(window).scrollTop(0);
-        });
+$(window).scrollTop(0);
+});
 
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -1269,8 +1275,5 @@
                 }
             });
         }
-
     </script>
-</body>
-
-</html>
+</body></html>

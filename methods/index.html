@@ -160,6 +160,12 @@
             text-decoration: underline;
         }
 
+        .btn:hover {
+            border-color: #EC4F40 !important;
+            color: white;
+            background-color: #EC4F40;
+        }
+
 
         .frameworkrightbox h1:first-of-type {
             margin-top: 0 !important;
@@ -358,7 +364,9 @@
 
         .accordionactive,
         .accordion:hover {
-            background-color: rgb(224, 235, 237);
+            /*            background-color: rgb(224, 235, 237);*/
+            background-color: rgba(236, 76, 64, 0.2);
+
         }
 
         .accordion:after {
@@ -589,7 +597,6 @@
             color: black;
             border-bottom-style: solid;
         }
-
     </style>
 
 
@@ -995,38 +1002,34 @@
         </div>
 
         <!--    </section>-->
-    </div>
 
 
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="../js/scripts.js">
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js">
 
 
-    </script>
-    <script>
-        $(window).on('load', function() {
-            $(window).scrollTop(0);
-        });
+        </script>
+        <script>
+            //            $(window).on('load', function() {
+            //                $(window).scrollTop(0);
+            //            });
 
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("accordionactive");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-
-    </script>
-</body>
-
-</html>
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("accordionactive");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+</body></html>
