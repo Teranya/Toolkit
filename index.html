@@ -22,7 +22,7 @@
     <style>
         body {
             border: 1px solid transparent;
-            padding-bottom: 100px;
+            /*            padding-bottom: 100px;*/
         }
 
         @font-face {
@@ -76,6 +76,13 @@
         .mainimg {
 
             z-index: 99;
+            max-height: 30vh;
+            width: auto;
+        }
+
+        .subimg {
+            min-height: 30vh;
+            width: auto;
         }
 
         section {
@@ -94,7 +101,7 @@
 
         /*MASTHEAD*/
         .masthead {
-            min-height: 500px;
+            min-height: 40vh;
 
             /*            background-color: #f8f9fa;*/
             /*            padding-top: 9.5rem;*/
@@ -104,6 +111,10 @@
         .btn:hover {
             border-color: #FFDD56 !important;
             background-color: #FFDD56;
+        }
+
+        .footer {
+            /*            padding-bottom: -100;*/
         }
 
     </style>
@@ -129,15 +140,15 @@
                         <li class="nav-item"><a class="nav-link" href="process/index.html">Process</a></li>
                         <li class="nav-item"><a class="nav-link" href="methods/index.html">Methods</a></li>
                         <li class="nav-item"><a class="nav-link" href="frameworks/index.html">Frameworks</a></li>
-                        <!--
+<!--
                         <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
-<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d">Basic Process Tracker Template </a></li>
-    <li><a class="dropdown-item" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Project Notion Dashboard</a></li>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d">Basic Process Tracker Template </a></li>
+                                <li><a class="dropdown-item" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Project Notion Dashboard</a></li>
 
-</ul>
-</li>
+                            </ul>
+                        </li>
 -->
                     </ul>
                 </div>
@@ -151,7 +162,7 @@
         <!-- Page content-->
 
 
-        <div class="container  masthead mt-5 mb-5">
+        <div class="container pt-5 masthead mt-5 ">
             <div class="row d-flex  gx-5 align-items-start">
                 <!-- 1 TITLE -->
                 <div class=" col-12 order-lg-0">
@@ -161,7 +172,7 @@
 
                 <!-- 2 Subtitle+Text -->
 
-                <div class="col-md-7 flex  col-12 order-lg-0">
+                <div class="col-md-6 flex  col-12 order-lg-0">
 
                     <div class="mb-5 mb-lg-0  text-lg-start">
                         <h2 class="lh-1 mb-3 ">The reflective designers toolkit</h2>
@@ -173,7 +184,7 @@
                     </div>
                 </div>
                 <!-- 3 image -->
-                <div class="col-md-5 col-12">
+                <div class=" col-12 col-sm-6">
                     <img class="img-fluid mainimg mb-4 mb-lg-0" src="assets/img0.png" alt="...">
 
 
@@ -197,11 +208,11 @@
             <div class=" homesection mb-5 container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
 
-                    <div class="col-sm-8 col-md-5">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img1.png" alt="..."></div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 subimg px-sm-0"><img class="img-fluid" src="assets/img1.png" alt="..."></div>
                         <!--                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..."></div>-->
                     </div>
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-md-6">
                         <h2 class="display-4 lh-1 mb-4">Process</h2>
                         <p class="lead fw-normal  mb-5 mb-lg-0">Describes and outlines what are design process docs. This introduces you to the various touchpoints needed for a comprehensive process document.</p>
                         <a class="btn btn-light mt-2 border border-dark" href="process/index.html" role="button">Start with process docs</a>
@@ -214,12 +225,12 @@
             <!--    <section class="bg-white homesection mb-5">-->
             <div class=" bg-white homesection mb-5 container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-sm-8 col-md-5  order-lg-1">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img2.png" alt="..."></div>
+                    <div class="col-sm-8 col-md-6  order-lg-1">
+                        <div class="px-5 subimg px-sm-0"><img class="img-fluid" src="assets/img2.png" alt="..."></div>
                         <!--                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..."></div>-->
                     </div>
 
-                    <div class="col-12 col-lg-7 order-lg-0">
+                    <div class="col-12 col-md-6 order-lg-0">
                         <h2 class="display-4 lh-1 mb-4">Methods</h2>
                         <p class="lead fw-normal mb-5 mb-lg-0">Reflection as a process can be applied in many different places, this section covers various different methods for reflecting.</p>
                         <a class="btn btn-light mt-2 border border-dark" href="methods/index.html" role="button">Find your perfect method</a>
@@ -235,11 +246,11 @@
             <div class="bg-white homesection mb-5 container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
 
-                    <div class="col-sm-8 col-md-5">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img3.png" alt="..."></div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 subimg px-sm-0"><img class="img-fluid" src="assets/img3.png" alt="..."></div>
                         <!--                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..."></div>-->
                     </div>
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-md-6">
                         <h2 class="display-4 lh-1 mb-4">Frameworks</h2>
                         <p class="lead fw-normal  mb-5 mb-lg-0">Using reflective models is one of the easiest ways to engage with the reflective process, this section covers a variety of frameworks and prompts to help your reflections.</p>
                         <a class="btn btn-light mt-2 border border-dark" href="frameworks/index.html" role="button">Build your framework</a>
@@ -250,7 +261,13 @@
 
 
         </div>
+
     </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>

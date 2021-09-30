@@ -100,7 +100,7 @@
 
         /*MASTHEAD*/
         .masthead {
-            min-height: 500px;
+            min-height: 40vh;
 
             /*            background-color: #f8f9fa;*/
             /*            padding-top: 9.5rem;*/
@@ -170,7 +170,7 @@
         }
 
         .frameworkrightbox h2 {
-            margin-top: 3rem;
+            /*            margin-top: 3rem;*/
             margin-bottom: 1rem;
             font-weight: 700;
             font-size: 2.1rem;
@@ -178,7 +178,7 @@
         }
 
         .frameworkrightbox h3 {
-            margin-top: 2rem;
+            /*            margin-top: 2rem;*/
             margin-bottom: .75rem;
             font-weight: 900;
             font-size: 1.35rem;
@@ -186,7 +186,7 @@
         }
 
         .frameworkrightbox h4 {
-            margin-top: 1.5rem;
+            /*            margin-top: 1.5rem;*/
             margin-bottom: .6rem;
             font-weight: 900;
             font-size: 1.25rem;
@@ -236,6 +236,12 @@
             line-height: 1.7em;
             padding-bottom: 5rem;
             font-weight: 400;
+        }
+
+        .accordioncontainertextalt {
+            line-height: 1.7em;
+            /*            padding-bottom: 5rem;*/
+            font-weight: 400 !important;
         }
 
         .accordioncontainertextmini {
@@ -571,6 +577,7 @@
         .frameworkrightbox {
             margin-bottom: 4em;
         }
+
     </style>
 
 
@@ -630,10 +637,10 @@
 
                 <!-- 2 Subtitle+Text -->
 
-                <div class="col-md-7 flex  col-12 order-lg-0">
+                <div class="col-md-6 flex  col-12 order-lg-0">
 
                     <div class="mb-5 mb-lg-0  text-lg-start">
-                        <h2 class="lh-1 mb-3 ">Frameworks</h2>
+                        <h2 class="lh-1 mb-3 ">Process</h2>
                         <p class="lead fw-normal  mb-5">Describes and outlines what are design process docs. This introduces you to the various touchpoints needed for a comprehensive process document.</p>
                         <a class="btn btn-light mt-2 border border-dark" href="#start" role="button">get started</a>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
@@ -642,8 +649,8 @@
                     </div>
                 </div>
                 <!-- 3 image -->
-                <div class="col-md-5 col-12">
-                    <img class="img-fluid mainimg mb-4 mb-lg-0" src="../assets/img1.png" alt="...">
+                <div class="col-md-6 col-12">
+                    <img class="img-fluid mainimg mb-4 mb-lg-0" src="../assets/img11.png" alt="...">
 
 
 
@@ -675,7 +682,7 @@
                         <h1 class="mainlink">What is a process book?</h1>
                         <!--                    <h4 class="linkdesc">describe, interpret, evaluate, plan ahead</h4>-->
                     </a>
-
+                    <hr>
                     <a class="notBlue" href="#debrief">
                         <h1 class="mainlink">Debrief </h1>
                         <!--                    <h4 class="linkdesc">what?, so what?, now what?</h4>-->
@@ -715,22 +722,25 @@
                     <div id="anchor1" class="container-fluid d-flex  justify-content-center bigprocesscontainer">
 
 
-                        <div class="accordioncontainer">
+                        <div class="accordioncontainer ">
                             <h3 class="accordiantitle" id="howto">the power of the design doc</h3>
-                            <h6 class="accordioncontainertext ">Taking the time to tailor one’s process helped us think broadly and not dive too fast into the details, to identify patterns and relationships in what were conceptual and visual systems. It helped us to identify core problems before diving into solutions, no matter the deliverable.<br><br>You’re often dealing with complex problems that stem from a variety of sources. When you are ready to move onto solving that problem, how do you keep track of the multiple directions you’ll explore? Why one worked over the rest? Do you have the links to those research findings you keep referencing? What exactly do you mean by the system? What about that meeting where you received feedback that might completely change your favoured direction? Did you make sure to take notes?
-                                <div class="processbreaker"></div>
+                            <p class="accordioncontainertextalt ">Taking the time to tailor one’s process helped us think broadly and not dive too fast into the details, to identify patterns and relationships in what were conceptual and visual systems. It helped us to identify core problems before diving into solutions, no matter the deliverable.<br><br>You’re often dealing with complex problems that stem from a variety of sources. When you are ready to move onto solving that problem, how do you keep track of the multiple directions you’ll explore? Why one worked over the rest? Do you have the links to those research findings you keep referencing? What exactly do you mean by the system? What about that meeting where you received feedback that might completely change your favoured direction? Did you make sure to take notes?</p>
+                            <!--                                <div class="processbreaker"></div>-->
 
 
-                                <div class="container p-5">
-                                    <div class="row">
-                                        <div class="alert col-12">
-
+                            <div class="container ">
+                                <div class="row">
+                                    <!--                                        <div class="alert col-12">-->
+                                    <blockquote class="blockquote pb-3 my-3">
+                                        <p class="accordioncontainertextalt">
                                             <!--                                            <h4>Notion dashboards</h4>-->
                                             You can use something like Notion to keep track of your project process, use a school email and with an education account you'll have access to a lot more space. You can store your screenshots in a place with descriptions for later reference.
-                                            <hr>
-                                            <span class="mb-0">Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</span>
-                                        </div>
-                                        <!--
+                                            <br>
+                                            Here are two templates you can duplicate into your workspace and and adapt for use for your projects.
+                                        </p>
+                                    </blockquote>
+                                    <!--                                        </div>-->
+                                    <!--
                                         <div class="col-12 alert alert-success" role="alert">
 
                                             <h4 class="alert-heading">Notion dashboards</h4>
@@ -739,31 +749,31 @@
                                             <span class="mb-0">Here are two templates you can duplicate into your workspace and and adapt for use for your projects.</span>
                                         </div>
 -->
-                                        <div class="col">
-                                            <div class="card">
-                                                <img src="../assets/notion1.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Design Project Notion Template</h5>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="../assets/notion1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Design Project Notion Template</h5>
 
-                                                    <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
-                                                </div>
+                                                <a target="_blank" href="https://www.notion.so/reflectivedesignerstoolkit/Design-Project-c5692475220c436186f55320c9c7e7d8" class="btn btn-outline-dark notion-btn">Go to template</a>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="card">
-                                                <img src="../assets/notion2.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Design Process Notion Template</h5>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="../assets/notion2.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Design Process Notion Template</h5>
 
-                                                    <a target="_blank" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
-                                                </div>
+                                                <a target="_blank" href="https://reflectivedesignerstoolkit.notion.site/Design-Process-Tracker-29d472f401a24e369007551d3461452d" class="btn btn-outline-dark notion-btn">Go to template</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
 
-                                <!--
+                            <!--
                                 <div class="notiongrabcontainer">
 
 <div class="notioncardcontainer">
@@ -790,21 +800,24 @@
 
 </div>
 -->
-                            </h6>
 
+                            <div class="processbreaker"></div>
                             <!--        ACCORDIAN 1-->
-                            <h3 class="accordiantitle" id="process1top">What is a process book?</h3>
+                            <h3 class="accordiantitle " id="process1top">What is a process book?</h3>
                             <p class="accordioncontainertext ">A good process book includes all the stages of the design process from preliminary research through thumbnails, sketches, wire frames, comps, and final designs. It also explains the process through an incorporated narrative. Carefully chosen words and images demonstrate the thinking and development that led to your final design. </p>
 
 
                             <h3 class="accordiantitle" id="process2top">What goes into a process book?</h3>
-                            <p class="accordioncontainertextmini "> Your process book should tell a coherent story through descriptions and pictures from beginning research to finished design. A thoughtful and well-designed process log becomes an important addition to your design portfolio. It tells a story.<br> <b>Bear in mind that books have introductions, captions, notes, and most importantly, a narrative—a beginning, a middle and an end. A 60-page collage of outtakes with no text is not a process book.</b>
-                            </p>
+                            <p class="accordioncontainertextmini "> Your process book should tell a coherent story through descriptions and pictures from beginning research to finished design. A thoughtful and well-designed process log becomes an important addition to your design portfolio. It tells a story.</p>
+                            <blockquote class="blockquote pb-3">
+                                <p>Bear in mind that books have introductions, captions, notes, and most importantly, a narrative—a beginning, a middle and an end. A 60-page collage of outtakes with no text is not a process book.
+                                </p>
+                            </blockquote>
                             <p class="accordioncontainertextmini"> This page divides the process document into 6 sections that you can map onto the double diamond proces document</p>
 
                             <img src="../assets/processphases.png" alt="Process Cycle" class="processcycle">
                             <p class="accordioncontainertextmini ">Bear in mind that a process doc, is also a design problem. Think of a way to communicate your process that unifies everything inside the book. Create a layout structure on a design application like InDesign, Illustrator, or Adobe XD, and plan what will go on each page. Pick your colours and fonts, you should also organise your book into sections - for example introduction, research, analysis, development, and conclusions and include a cover with your name, the project title, and the course title</p>
-                            <p class="accordioncontainertext processalert"> <b> Remember this isn't the only way to create a process document, use this as a base but confirm with your professors in case they want something specific.</b></p>
+                            <p class="accordioncontainertext ">Remember this isn't the only way to create a process document, use this as a base but confirm with your professors in case they want something specific.</p>
 
                             <!--SECTIONS START-->
                             <h2 class="accordiantitle" id="debrief">Debrief</h2>
@@ -954,4 +967,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
-</body></html>
+</body>
+
+</html>
