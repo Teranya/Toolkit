@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/84e7860cb7.js" crossorigin="anonymous"></script>
     <!--    <link rel="stylesheet" href="https://use.typekit.net/uqt1xnz.css">-->
     <link rel="stylesheet" href="https://use.typekit.net/myd2ndl.css">
 
@@ -77,6 +78,20 @@
             /* border-bottom-style: solid;
         border-width: 1px; */
 
+        }
+
+        footer {
+            border: 1px solid #333;
+        }
+
+        .footerlink {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .footerlink:hover {
+            color: #EC4F40 !important;
+            text-decoration: italic;
         }
 
         #logo {
@@ -492,6 +507,18 @@
         div {
             display: block;
         }
+
+
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #EC4F40 !important;
+            border-color: #EC4F40 !important;
+            border-radius: 50px;
+        }
+
 
         @media only screen and (min-width: 600px) {
 
@@ -1001,39 +1028,75 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--    </section>-->
+    <!--    </section>-->
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- footer-->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">Made with &#x2764; by <a class="footerlink" href="https://www.tanvichhabra.com/" role="button">Tanvi C</a></span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js">
 
 
+    </script>
+    <script>
+        $(window).on('load', function() {
+            $(window).scrollTop(0);
+        });
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-
-        </script>
-        <script>
-            $(window).on('load', function() {
-                $(window).scrollTop(0);
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("accordionactive");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
             });
+        }
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
 
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("accordionactive");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
             }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
 
-        </script>
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>
