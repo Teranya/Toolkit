@@ -624,7 +624,6 @@
             color: black;
             border-bottom-style: solid;
         }
-
     </style>
 
 
@@ -1029,75 +1028,81 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!--    </section>-->
-
-    <!-- Back to top button -->
-    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- footer-->
-    <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container">
-            <span class="text-muted">Made with &#x2764; by <a class="footerlink" href="https://www.tanvichhabra.com/" role="button">Tanvi C</a></span>
-        </div>
-    </footer>
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="../js/scripts.js">
 
 
-    </script>
-    <script>
-        $(window).on('load', function() {
-            $(window).scrollTop(0);
-        });
+        <!--    </section>-->
 
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("accordionactive");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
+        <!-- footer-->
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container">
+                <span class="text-muted">Made with &#x2764; by <a class="footerlink" href="https://www.tanvichhabra.com/" role="button">Tanvi C</a></span>
+            </div>
+            <!--        I'm not paying for google analytics or anything for a GitHub Pages website, so time to go old school-->
+            <div class="youdontseeshit" style="display: none">
+
+                <a class="hitCounter" target="_blank" title="Hit counter" data-name="418e7fefce8886d2650b38c7e0aa0012|5|ip|1|rgb(34, 37, 41);|#ffffff|small|s-hit">Hit Counter</a>
+                <script>
+                    document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");
+                </script>
+            </div>
+            <!--        These counters were a vital part of my development as a designer okay-->
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js">
+
+
+        </script>
+        <script>
+            $(window).on('load', function() {
+                $(window).scrollTop(0);
             });
-        }
-        //Get the button
-        let mybutton = document.getElementById("btn-back-to-top");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction();
-        };
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        function scrollFunction() {
-            if (
-                document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20
-            ) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("accordionactive");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
             }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.addEventListener("click", backToTop);
+            //Get the button
+            let mybutton = document.getElementById("btn-back-to-top");
 
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+            };
 
-    </script>
-</body>
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
 
-</html>
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+</body></html>
